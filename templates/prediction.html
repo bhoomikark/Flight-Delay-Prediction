@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Prediction Page</h1>
+<form method="POST" action="/predict">
+    <div class="row">
+        <div class="field">
+            <label for="field1">MONTH</label>
+            <input type="text" id="field1" name="a" class="curved-input">
+        </div>
+        <div class="field">
+            <label for="field2">DAY_OF_MONTH</label>
+            <input type="text" id="field2" name="b" class="curved-input">
+        </div>
+    </div>
+    <div class="row">
+        <div class="field">
+            <label for="field3">DAY_OF_WEEK</label>
+            <input type="text" id="field3" name="c" class="curved-input">
+        </div>
+        <div class="field">
+            <label for="field4">CRS_DEP_TIME</label>
+            <input type="text" id="field4" name="d" class="curved-input">
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <div class="field">
+            <label for="field5">DEP_TIME</label>
+            <input type="text" id="field5" name="e" class="curved-input">
+        </div>
+        <div class="field">
+            <label for="field6">ORIGIN</label>
+            <input type="text" id="field6" name="f" class="curved-input">
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="field">
+            <label for="field7">DEST</label>
+            <input type="text" id="field7" name="g" class="curved-input">
+        </div>
+       
+    </div>
+
+
+  
+
+    
+    <div class="row">
+    <!-- Add similar blocks for Field 3 to Field 12 -->
+    <button type="submit" class="btn">Predict</button>
+</form>
+{% endblock %}

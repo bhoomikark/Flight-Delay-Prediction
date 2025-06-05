@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('ori_tabel') }}">Original dataset</a>
+        <a href="{{ url_for('fil_tabel') }}">Filter dataset</a>
+        <a href="{{ url_for('analysis') }}">Analysis</a>
+       
+        <a href="{{ url_for('prediction') }}">Prediction</a>
+        {% if session.get('logged_in') %}
+        <a href="{{ url_for('logout') }}">Logout</a>
+    {% endif %}
+    
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!-- Footer -->
+    <!-- <footer>
+        <p>&copy; 2024 Your Project Title. All Rights Reserved.</p>
+    </footer> -->
+</body>
+</html>

@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Porject Title</h1>
+<p>About Project.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flight Delay Prediction</title>
+</head>
+<body>
+    <header>
+        <h1>Flight Delay Prediction</h1>
+    </header>
+
+   
+    <div class="container">
+        <p>Flight delays are a common problem faced by passengers and airlines. By predicting delays, we can improve passenger experience and operational efficiency. Learn more about the key aspects of flight delay prediction below:</p>
+
+        <div class="highlight-box">
+            <a href="#">Learn More About Flight Delay Prediction</a>
+            <ul>
+                <li><a href="#why-predict">Why Predict Flight Delays?</a></li>
+                <li><a href="#how-it-works">How Does It Work?</a></li>
+                <li><a href="#key-steps">Key Steps in Flight Delay Prediction</a></li>
+            </ul>
+        </div>
+
+        <h2 id="why-predict">Why Predict Flight Delays?</h2>
+        <p>Flight delay prediction helps airlines and passengers manage their time better. By predicting delays, passengers can adjust their travel plans, and airlines can allocate resources more effectively.</p>
+
+        <h2 id="how-it-works">How Does It Work?</h2>
+        <p>Flight delay prediction models use a variety of data sources to make predictions. These sources can include:</p>
+        <ul>
+            <li>Historical flight data (departure/arrival times, delays)</li>
+            <li>Weather conditions (wind speed, visibility, precipitation)</li>
+            <li>Air traffic information (congestion, route restrictions)</li>
+            <li>Airport data (gate availability, runway closures)</li>
+            <li>Real-time flight tracking data</li>
+        </ul>
+        <p>Machine learning algorithms are trained on this data to identify patterns and predict future delays.  These models can be quite complex, taking into account various factors and their interrelationships.</p>
+
+
+        <h2 id="key-steps">Key Steps in Flight Delay Prediction</h2>
+        <p>The key steps involved in flight delay prediction typically include:</p>
+        <ol>
+            <li><strong>Data Collection:</strong> Gathering relevant data from various sources.</li>
+            <li><strong>Data Preprocessing:</strong> Cleaning and preparing the data for modeling. This might involve handling missing values, converting data types, and feature engineering.</li>
+            <li><strong>Feature Selection:</strong> Identifying the most important variables that contribute to flight delays.</li>
+            <li><strong>Model Training:</strong> Training a machine learning model on the historical data.</li>
+            <li><strong>Model Evaluation:</strong> Assessing the performance of the model using appropriate metrics.</li>
+            <li><strong>Deployment:</strong> Implementing the model to make real-time predictions.</li>
+            <li><strong>Monitoring and Refinement:</strong> Continuously monitoring the model's performance and retraining it as needed to maintain accuracy.</li>
+        </ol>
+
+    </div>
+
+    <footer>
+        <p> Flight Delay Prediction System</p>
+    </footer>
+
+</body>
+</html>
+{% endblock %}
